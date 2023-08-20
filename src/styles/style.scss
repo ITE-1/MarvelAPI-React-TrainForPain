@@ -1,0 +1,101 @@
+@import './buttons.scss';
+@import './variables.scss';
+
+  /*Обнуление*/
+  * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  :focus, :active {
+    outline: none;
+  }
+  
+  a:focus, a:active {
+    outline: none;
+  }
+  
+  nav, footer, header, aside {
+    display: block;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 18px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  input, button, textarea {
+    font-family: inherit;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  a, a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  main {
+    margin-top: 50px;
+    position: relative;
+  }
+
+  .App {
+    width: 1100px;
+      margin: 0 auto;
+      padding: 50px 0 50px 0;
+      position: relative;
+  
+      .bg-decoration {
+        position: absolute;
+        right: -174px;
+        bottom: -70px;
+        z-index: -1;
+        
+      }
+  }
+  
+  

@@ -1,0 +1,96 @@
+
+
+.char {
+
+    &__content{
+        padding: 50px 0;
+        display: grid;
+        grid-template-columns: 650px 450px;
+        column-gap: 30px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        row-gap: 25px;
+        column-gap: 25px;
+    }
+
+    &__item {
+        cursor: pointer;
+        width: 200px;
+        height: 318px;
+        background-color: #232222;
+        
+        }
+    &__item:active {
+        box-shadow: -3px 15px 51px -6px rgb(243, 42, 7);
+    }
+
+    &__item.active {
+        box-shadow: -3px 15px 51px -6px rgba(255, 107, 0, 1);
+    }
+    &__item img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        
+    }
+   
+    &__name {
+        line-height: 29px;
+        margin-top: 15px;
+        padding: 5px 15px;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+    }
+
+    &__info {
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
+        padding: 25px;
+    }
+    &__basics {
+        display: grid;
+        grid-template-columns: 150px auto;
+        column-gap: 25px;
+    }
+    &__basics img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    &__info-name {
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+    }
+    &__btns {
+        margin-top: 35px;
+    }
+    &__descr{
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 15px;
+    }
+
+    &__comics {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        
+    }
+
+    &__comics-list {
+        margin-top: 10px;
+    }
+    &__comics-item {
+        width: 100%;
+        padding: 0 15px;
+        line-height: 25px;
+        box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+        margin-top: 10px;
+    }
+}

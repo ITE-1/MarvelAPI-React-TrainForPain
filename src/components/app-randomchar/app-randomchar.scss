@@ -1,0 +1,73 @@
+@import '../../styles/variables';
+
+
+.randomchar {
+    display: grid;
+   
+
+    grid-template-columns: repeat(2, 50%);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    &__block {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 180px auto;
+        column-gap: 30px;
+        padding: 40px 35px;
+       
+    }
+    &__img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    &__info {
+        display: grid;
+        grid-template-rows: minmax(29px, auto) 90px 38px;
+        row-gap: 10px;
+        padding-top: 3px;
+    }
+
+    &__name {
+      font-weight: bold;
+      font-size: 22px;
+      text-transform: uppercase;
+      line-height: 29px;
+    }
+
+    &__dscr {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    &__btns {
+        margin-top: 15px;
+    }
+    &__btns:nth-child(2) {
+        margin-left: 5px;
+    }
+    &__static {
+        padding: 40px 35px;
+        background-color: #232222;
+        position: relative;
+        
+    }
+    &__static button {
+        margin-top: 13px;
+    }
+    &__title {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: -0.045em;
+        line-height: 32px;
+
+    }
+    &__title:nth-child(2) {
+        margin-top: 35px;
+    }
+    &__decoration {
+        position: absolute;
+        right: -37px;
+        bottom: 14px;
+    }
+}
