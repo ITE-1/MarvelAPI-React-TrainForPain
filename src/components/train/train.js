@@ -68,4 +68,3 @@ const List = () => {
 
 export default List;
 
-//there is new edit file

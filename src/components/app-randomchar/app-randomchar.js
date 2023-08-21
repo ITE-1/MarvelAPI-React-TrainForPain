@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './app-randomchar.scss';
 import mjolnir from './../../assets/img/mjolnir.png';
 import MarvelService from '../services/services';
-import Person from './person';
 import Spiner from '../spiner/Spiner';
 import Error from '../error/Error';
 

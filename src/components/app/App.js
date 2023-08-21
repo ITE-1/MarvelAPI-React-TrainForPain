@@ -11,8 +11,9 @@ function App() {
 const [selectedCharacter, setSelectedCharacter] = useState(null)
 
 const getSelectedCharacterId = (id) => {
+
   setSelectedCharacter(id)
-  console.log(selectedCharacter)
+  
 }
 
   return (

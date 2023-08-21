@@ -1,32 +1,47 @@
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import thor from './../../assets/img/thor.jpeg'
+import MarvelService from '../services/services'
 
-const CharInfo = ({selectedChar}) => {
-    
-    const getCharacterId = (e) => {
-        e.preventDefault();
-        
-    }
+const CharInfo = ({charID}) => {
+const [character, setCharacter] = useState(null);
+const [loading, setLoading] = useState(true);
+const marvelServices = new MarvelService();
+
+// useEffect(() => {
+//     if(!charID) {
+//         return;
+//     }
+//     if(loading) {
+//         return;
+//     }
+
+//     marvelServices
+//         .getCharacter(charID)
+//         .then((char) => {
+//             setCharacter(char);
+//             setLoading(false);
+//         })
+// }, [charID, marvelServices]);
+
+//  const { name, description, thumbnail, homepage, wiki, comics } = character;
+
         return (
-            <div className='char__info'>
-            <div className='char__basics'>
-            <img src={thor} alt='img' />
-            <div>
-                {selectedChar.map(item => {
-                    return
-                })}
-                <div className='char__info-name'></div>
-                <div className='char__btns'>
-                <a className='button button__main' href='google.com'>
-                    <div className='inner' onClick={getCharacterId}>HOMEPAGE</div> 
-                </a>
-               <a className='button button__secondary' href='marvel.com'>
-                <div className='inner'>WIKI</div> 
-               </a>
+            <div className="char__info">
+            <div className="char__basics">
+                <img src={thor} alt="abyss"/>
+                <div>
+                    <div className="char__info-name">thor</div>
+                    <div className="char__btns">
+                        <a href="#" className="button button__main">
+                            <div className="inner">homepage</div>
+                        </a>
+                        <a href="#" className="button button__secondary">
+                            <div className="inner">Wiki</div>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
         <div className='char__descr'>
         n Norse mythology, Loki is a god or jötunn (or both). 
         Loki is the son of Fárbauti and Laufey, and the brother 
