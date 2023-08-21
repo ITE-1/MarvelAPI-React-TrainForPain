@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import CharContent from '../app-charcontent/app-charcontent';
-import AppHeader from '../app-header/app-header';
+import AppHeader from '../header/app-header/app-header';
+import '../header/header.scss'
 import RandomChar from '../app-randomchar/app-randomchar';
 import '../../styles/style.scss';
 import vision from './../../assets/img/vision.png';
@@ -18,10 +19,11 @@ const getSelectedCharacterId = (id) => {
 
   return (
     <div className="App">
-     
-       <AppHeader />
-      <main>
+       <header className='header'>
+        <AppHeader />
         <RandomChar />
+       </header>
+      <main>
         <div className='char__content'>
           <CharContent getID={getSelectedCharacterId} />
           <CharInfo charID={selectedCharacter}/>

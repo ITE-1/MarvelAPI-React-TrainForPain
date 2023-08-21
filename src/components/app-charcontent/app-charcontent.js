@@ -43,7 +43,7 @@ const CharList = ({ getID }) => {
 
     return imgStyle;
   };
-  
+
   const handleClickItem = (index, id) => {
     getID(id);
     setActiveIndex(index);

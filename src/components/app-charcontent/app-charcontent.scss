@@ -93,4 +93,63 @@
         box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
         margin-top: 10px;
     }
+    @media (max-width: 1024px) and (min-width: 769px) {
+        &__content {
+            grid-template-columns: 1fr 1fr; // Две равные колонки
+        }
+        &__grid {
+            grid-template-columns: repeat(2, 250px); 
+            justify-content: center;
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+        &__item {
+            width: 235px; 
+            height: 375px; 
+        }
+        &__name {
+            font-size: 25px;
+            text-align: center;
+        }
+        &__item img {
+            width: 100%; 
+            min-height: 305px;
+        }
+        &__info {
+            padding: 15px; // Уменьшаем отступ для экономии пространства
+        }
+    }
+
+
+        @media (max-width: 768px) {
+            &__content {
+                padding: 30px 10px;
+                grid-template-columns: 0fr 1fr; // Сетка становится одноколоночной
+            }
+            &__grid {
+                grid-template-columns: repeat(1, 300px); // Меняем на 2 колонки
+                justify-content: center; // Центрирование содержимого сетки
+                align-items: center;
+                padding-left:5px;
+                row-gap: 20px;
+                column-gap: 20px;
+            }
+            &__item {
+                width: 275px; // Уменьшаем размер элемента
+                height: 418px; // Пропорциональное уменьшение высоты
+            }
+            &__item img {
+                width: 275px; // Уменьшаем размер изображения
+                height: 350px;
+            }
+            &__name {
+                text-align: center;
+                font-size: 30px; // Уменьшаем размер шрифта
+                letter-spacing: 3px;
+                padding: 5px 10px;
+            }
+            &__info {
+                padding: 20px;
+            }
+        }
 }

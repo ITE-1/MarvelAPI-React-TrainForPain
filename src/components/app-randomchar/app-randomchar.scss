@@ -70,4 +70,36 @@
         right: -37px;
         bottom: 14px;
     }
+    @media (max-width: 1024px) and (min-width: 769px) {
+        
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; // Сетка становится одноколоночной
+
+        &__block {
+            grid-template-columns: 1fr; // Отображение элементов друг под другом
+            justify-items: center; // Центрирование элементов
+        }
+
+        &__img {
+            width: 150px; // Немного уменьшаем размер изображения
+            height: 150px;
+        }
+
+        &__static {
+            text-align: center; // Центрирование текста
+
+            &__title {
+                font-size: 20px; // Уменьшение размера шрифта
+            }
+
+            &__decoration {
+                // Изменяем позиционирование изображения
+                right: 50%;
+                bottom: -20px;
+                transform: translateX(50%); // Центрирование изображения относительно блока
+            }
+        }
+    }
 }

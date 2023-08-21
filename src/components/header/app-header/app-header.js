@@ -3,8 +3,8 @@ import './app-header.scss'
 const AppHeader = () => {
 
     return (
-        <header className='app__header'>
-           <h1 className="app__title">
+      <div className='app__header'>
+      <h1 className="app__title">
                 <a href="marvel.com">Marvel</a> 
                 information portal
            </h1>
@@ -15,7 +15,9 @@ const AppHeader = () => {
                     <li>Comics</li>
                 </ul>
            </nav>
-        </header>
+      </div>
+           
+       
     )
 
 }
