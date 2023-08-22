@@ -14,14 +14,13 @@ const [selectedCharacter, setSelectedCharacter] = useState(null)
 const getSelectedCharacterId = (id) => {
 
   setSelectedCharacter(id)
-  
 }
 
   return (
     <div className="App">
        <header className='header'>
         <AppHeader />
-        <RandomChar />
+        <RandomChar getID={getSelectedCharacterId}/>
        </header>
       <main>
         <div className='char__content'>

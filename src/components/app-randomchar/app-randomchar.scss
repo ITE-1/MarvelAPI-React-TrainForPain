@@ -10,9 +10,11 @@
     &__block {
         display: grid;
         align-items: center;
+        justify-content: center;
         grid-template-columns: 180px auto;
         column-gap: 30px;
         padding: 40px 35px;
+       
        
     }
     &__img {
