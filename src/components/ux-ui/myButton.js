@@ -5,7 +5,7 @@ const MyButton = () => {
 
 
     return (
-        <button className="myButton">Нажми что бы обновить начальный список персонажей</button>
+        <button className="myButton">Загрузить персонажей</button>
     )
 }
 
