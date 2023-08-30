@@ -1,0 +1,23 @@
+@import './variables';
+.button {
+    
+    min-width: 101px;
+    text-align: center;
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 5px;
+    
+    .inner {
+        padding: 0 18px;
+        line-height: 18px;
+    }
+
+
+    &__main {
+        background-color: $main-color;
+    }
+    &__secondary {
+        background-color: $grey;
+    }
+}

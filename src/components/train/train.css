@@ -1,0 +1,25 @@
+
+
+.list {
+    width: 500px;
+    height: 450px;
+    background-color: burlywood;
+    padding: 15px;
+}
+
+
+.item {
+    width: 150px;
+    height: 70px;
+    background-color: brown;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.item-active {
+    width: 150px;
+    height: 70px;
+    background-color: blueviolet;
+    padding: 5px;
+    margin-top: 10px;
+}
